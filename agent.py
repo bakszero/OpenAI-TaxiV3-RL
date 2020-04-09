@@ -61,7 +61,7 @@ class Agent:
             #  3 choices:
             # 1. Expected Sarsa
             # 2. SarsaMax (Q-Learning)
-            # 3. 
+            # 3. Sarsa(0)
             #expected_val = np.sum(self.Q[next_state]*policy)
             expected_val = np.max(self.Q[next_state])
             #expected_val = self.Q[next_state][next_action]
